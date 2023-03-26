@@ -26,8 +26,4 @@ git checkout -b $BRANCH_NAME
 sed -i '' -e "s/MARKETING_VERSION \= [^\;]*\;/MARKETING_VERSION = $RELEASE_VERSION;/" $CI_XCODE_PROJECT/project.pbxproj
 
 # Push changes to new branch
-git push --set-upstream origin $BRANCH_NAME
-
-gh pr create \
---title "🔖 Version Bump: $RELEASE_VERSION" \
---body "This PR was automatically created. Check out locally to resolve any conflicts."
+git push --set-upstream origin $BRANCH_NAME && gh pr create --title "🔖 Version Bump: $RELEASE_VERSION" --body "This PR was automatically created. Check out locally to resolve any conflicts."
