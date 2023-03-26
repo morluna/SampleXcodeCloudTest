@@ -15,10 +15,6 @@ echo 📲 Creating Version Bump PR: $RELEASE_VERSION
 # Version bump branch name
 BRANCH_NAME="versionBump/$RELEASE_VERSION"
 
-# Configure git
-#git config user.name github-actions[bot]
-#git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-
 # Create version bump branch
 git checkout -b $BRANCH_NAME
 
@@ -28,4 +24,4 @@ sed -i '' -e "s/MARKETING_VERSION \= [^\;]*\;/MARKETING_VERSION = $RELEASE_VERSI
 git commit -am "Bumped version to $RELEASE_VERSION"
 
 # Push changes to new branch
-git push --set-upstream origin $BRANCH_NAME && gh pr create --title "🔖 Version Bump: $RELEASE_VERSION" --body "This PR was automatically created. Check out locally to resolve any conflicts."
+git push "https://$GH_TOKEN@github.com/morluna/SampleXcodeCloudTest.git" --set-upstream $BRANCH_NAME && gh pr create --title "🔖 Version Bump: $RELEASE_VERSION" --body "This PR was automatically created. Check out locally to resolve any conflicts."
