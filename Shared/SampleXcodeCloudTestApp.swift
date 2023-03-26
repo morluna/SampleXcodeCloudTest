@@ -11,7 +11,11 @@ import SwiftUI
 struct SampleXcodeCloudTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(iOS)
+            AppTabBarView()
+            #else
+            AppSidebarView()
+            #endif
         }
     }
 }

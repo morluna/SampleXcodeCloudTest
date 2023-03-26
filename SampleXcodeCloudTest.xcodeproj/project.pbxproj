@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3AD9098529CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9098429CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift */; };
-		3AD9098729CFD3DF009AB517 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9098629CFD3DF009AB517 /* ContentView.swift */; };
 		3AD9098929CFD3E0009AB517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD9098829CFD3E0009AB517 /* Assets.xcassets */; };
 		3AD9098D29CFD3E0009AB517 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD9098C29CFD3E0009AB517 /* Preview Assets.xcassets */; };
+		3AD9099429CFD5F5009AB517 /* NameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9099329CFD5F5009AB517 /* NameListView.swift */; };
+		3AD9099929CFD6E3009AB517 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9099829CFD6E3009AB517 /* AppTabBarView.swift */; };
+		3AD9099B29CFD6FA009AB517 /* AppSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9099A29CFD6FA009AB517 /* AppSidebarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AD9098129CFD3DF009AB517 /* SampleXcodeCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleXcodeCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD9098429CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXcodeCloudTestApp.swift; sourceTree = "<group>"; };
-		3AD9098629CFD3DF009AB517 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AD9098829CFD3E0009AB517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD9098A29CFD3E0009AB517 /* SampleXcodeCloudTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleXcodeCloudTest.entitlements; sourceTree = "<group>"; };
 		3AD9098C29CFD3E0009AB517 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AD9099329CFD5F5009AB517 /* NameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameListView.swift; sourceTree = "<group>"; };
+		3AD9099829CFD6E3009AB517 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
+		3AD9099A29CFD6FA009AB517 /* AppSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +40,9 @@
 		3AD9097829CFD3DF009AB517 = {
 			isa = PBXGroup;
 			children = (
-				3AD9098329CFD3DF009AB517 /* SampleXcodeCloudTest */,
+				3AD9099629CFD677009AB517 /* macOS */,
+				3AD9099529CFD670009AB517 /* iOS */,
+				3AD9098329CFD3DF009AB517 /* Shared */,
 				3AD9098229CFD3DF009AB517 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,16 +55,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3AD9098329CFD3DF009AB517 /* SampleXcodeCloudTest */ = {
+		3AD9098329CFD3DF009AB517 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				3AD9098429CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift */,
-				3AD9098629CFD3DF009AB517 /* ContentView.swift */,
-				3AD9098829CFD3E0009AB517 /* Assets.xcassets */,
-				3AD9098A29CFD3E0009AB517 /* SampleXcodeCloudTest.entitlements */,
+				3AD9099C29CFD7CD009AB517 /* Features */,
+				3AD9099729CFD68F009AB517 /* Resources */,
 				3AD9098B29CFD3E0009AB517 /* Preview Content */,
 			);
-			path = SampleXcodeCloudTest;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		3AD9098B29CFD3E0009AB517 /* Preview Content */ = {
@@ -67,6 +72,55 @@
 				3AD9098C29CFD3E0009AB517 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AD9099529CFD670009AB517 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9099D29CFD7DE009AB517 /* Features */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3AD9099629CFD677009AB517 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9099E29CFD7E2009AB517 /* Features */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3AD9099729CFD68F009AB517 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9098829CFD3E0009AB517 /* Assets.xcassets */,
+				3AD9098A29CFD3E0009AB517 /* SampleXcodeCloudTest.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AD9099C29CFD7CD009AB517 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9099329CFD5F5009AB517 /* NameListView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3AD9099D29CFD7DE009AB517 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9099829CFD6E3009AB517 /* AppTabBarView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3AD9099E29CFD7E2009AB517 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9099A29CFD6FA009AB517 /* AppSidebarView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD9098729CFD3DF009AB517 /* ContentView.swift in Sources */,
+				3AD9099429CFD5F5009AB517 /* NameListView.swift in Sources */,
+				3AD9099B29CFD6FA009AB517 /* AppSidebarView.swift in Sources */,
+				3AD9099929CFD6E3009AB517 /* AppTabBarView.swift in Sources */,
 				3AD9098529CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SampleXcodeCloudTest/SampleXcodeCloudTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Shared/Resources/SampleXcodeCloudTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleXcodeCloudTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = KD674EGM5X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -299,10 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SampleXcodeCloudTest/SampleXcodeCloudTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Shared/Resources/SampleXcodeCloudTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleXcodeCloudTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = KD674EGM5X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
