@@ -1,8 +1,13 @@
 #!/bin/sh
 
+# CI_XCODE_PROJECT = SampleXcodeCloudTest.xcodeproj
+# CI_BRANCH = release/1.0.0
+
 set -e
 
-RELEASE_VERSION=${CI_BRANCH#release/}
+# Given our branch name is `release/1.0.0` this will strip out the prefix,
+# leaving RELEASE_VERSION = 1.0.0
+export RELEASE_VERSION=${CI_BRANCH#release/}
 
 cd $CI_WORKSPACE
 
