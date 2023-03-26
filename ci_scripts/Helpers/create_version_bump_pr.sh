@@ -25,5 +25,7 @@ git checkout -b $BRANCH_NAME
 # Update version in develop branch
 sed -i '' -e "s/MARKETING_VERSION \= [^\;]*\;/MARKETING_VERSION = $RELEASE_VERSION;/" $CI_XCODE_PROJECT/project.pbxproj
 
+git commit -am "Bumped version to $RELEASE_VERSION"
+
 # Push changes to new branch
 git push --set-upstream origin $BRANCH_NAME && gh pr create --title "🔖 Version Bump: $RELEASE_VERSION" --body "This PR was automatically created. Check out locally to resolve any conflicts."
