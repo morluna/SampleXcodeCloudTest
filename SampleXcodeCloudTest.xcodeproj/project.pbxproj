@@ -24,6 +24,10 @@
 		3AD9099329CFD5F5009AB517 /* NameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameListView.swift; sourceTree = "<group>"; };
 		3AD9099829CFD6E3009AB517 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		3AD9099A29CFD6FA009AB517 /* AppSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarView.swift; sourceTree = "<group>"; };
+		3AD909A029CFE5D7009AB517 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		3AD909A129CFE5E4009AB517 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		3AD909A229CFE5EC009AB517 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
+		3AD909A329CFE950009AB517 /* release_version_bump.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = release_version_bump.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		3AD9097829CFD3DF009AB517 = {
 			isa = PBXGroup;
 			children = (
+				3AD9099F29CFE59E009AB517 /* ci_scripts */,
 				3AD9099629CFD677009AB517 /* macOS */,
 				3AD9099529CFD670009AB517 /* iOS */,
 				3AD9098329CFD3DF009AB517 /* Shared */,
@@ -121,6 +126,25 @@
 				3AD9099A29CFD6FA009AB517 /* AppSidebarView.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		3AD9099F29CFE59E009AB517 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				3AD909A029CFE5D7009AB517 /* ci_post_clone.sh */,
+				3AD909A129CFE5E4009AB517 /* ci_pre_xcodebuild.sh */,
+				3AD909A229CFE5EC009AB517 /* ci_post_xcodebuild.sh */,
+				3AD909A529CFEDC0009AB517 /* Helpers */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		3AD909A529CFEDC0009AB517 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3AD909A329CFE950009AB517 /* release_version_bump.sh */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
