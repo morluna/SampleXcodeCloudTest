@@ -3,7 +3,7 @@
 set -e
 
 # Branch changes
-if [ ! -n "$CI_BRANCH" ]; then
+if [[ -n $CI_BRANCH ]]; then
     echo 🌴 Current Branch: $CI_BRANCH
 
     # If we are in a release branch, we assume we're following a naming pattern such as `release-1.0.0`
