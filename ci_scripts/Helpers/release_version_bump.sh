@@ -7,7 +7,7 @@ set -e
 
 # Given our branch name is `release/1.0.0` this will strip out the prefix,
 # leaving RELEASE_VERSION = 1.0.0
-RELEASE_VERSION=${CI_BRANCH#release/}
+export RELEASE_VERSION=${CI_BRANCH#release/}
 
 cd $CI_WORKSPACE
 

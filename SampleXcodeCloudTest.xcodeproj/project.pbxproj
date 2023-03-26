@@ -38,6 +38,7 @@
 		3AC9298929D0000F00B7F387 /* iOSUnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = iOSUnitTest.xctestplan; sourceTree = "<group>"; };
 		3AC9298A29D0002000B7F387 /* macOSUnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = macOSUnitTest.xctestplan; sourceTree = "<group>"; };
 		3AC9298B29D00F5100B7F387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC9298C29D0A58A00B7F387 /* create_version_bump_pr.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_version_bump_pr.sh; sourceTree = "<group>"; };
 		3AD9098129CFD3DF009AB517 /* SampleXcodeCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleXcodeCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD9098429CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXcodeCloudTestApp.swift; sourceTree = "<group>"; };
 		3AD9098829CFD3E0009AB517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -198,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				3AD909A329CFE950009AB517 /* release_version_bump.sh */,
+				3AC9298C29D0A58A00B7F387 /* create_version_bump_pr.sh */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
