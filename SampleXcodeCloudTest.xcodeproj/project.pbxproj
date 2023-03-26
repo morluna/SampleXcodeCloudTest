@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AC9298929D0000F00B7F387 /* iOSUnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = iOSUnitTest.xctestplan; sourceTree = "<group>"; };
+		3AC9298A29D0002000B7F387 /* macOSUnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = macOSUnitTest.xctestplan; sourceTree = "<group>"; };
 		3AD9098129CFD3DF009AB517 /* SampleXcodeCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleXcodeCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD9098429CFD3DF009AB517 /* SampleXcodeCloudTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXcodeCloudTestApp.swift; sourceTree = "<group>"; };
 		3AD9098829CFD3E0009AB517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +53,6 @@
 		3AD909AC29CFF5C6009AB517 /* iOSUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUnitTests.swift; sourceTree = "<group>"; };
 		3AD909B729CFF5D8009AB517 /* macOSUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macOSUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD909B929CFF5D8009AB517 /* macOSUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSUnitTests.swift; sourceTree = "<group>"; };
-		3AD909C029CFF617009AB517 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +80,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC9298829CFFF9700B7F387 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9298929D0000F00B7F387 /* iOSUnitTest.xctestplan */,
+				3AC9298A29D0002000B7F387 /* macOSUnitTest.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
 		3AD9097829CFD3DF009AB517 = {
 			isa = PBXGroup;
 			children = (
-				3AD909C029CFF617009AB517 /* UnitTestPlan.xctestplan */,
+				3AC9298829CFFF9700B7F387 /* TestPlans */,
 				3AD9098329CFD3DF009AB517 /* SampleXcodeCloudTest */,
 				3AD909AB29CFF5C6009AB517 /* iOSUnitTests */,
 				3AD909B829CFF5D8009AB517 /* macOSUnitTests */,
