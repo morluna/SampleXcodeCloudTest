@@ -24,4 +24,4 @@ sed -i '' -e "s/MARKETING_VERSION \= [^\;]*\;/MARKETING_VERSION = $RELEASE_VERSI
 git commit -am "Bumped version to $RELEASE_VERSION"
 
 # Push changes to new branch
-git push "https://$GH_TOKEN@github.com/morluna/SampleXcodeCloudTest.git" -u $BRANCH_NAME && gh pr create --title "🔖 Version Bump: $RELEASE_VERSION" --body "This PR was automatically created. Check out locally to resolve any conflicts." --head
+git push -u "https://$GH_TOKEN@github.com/morluna/SampleXcodeCloudTest.git" $BRANCH_NAME && gh pr create --title "🔖 Version Bump: $RELEASE_VERSION" --body "This PR was automatically created. Check out locally to resolve any conflicts." --head $BRANCH_NAMEg
