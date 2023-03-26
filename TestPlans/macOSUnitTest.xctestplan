@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "D0CB95B0-5273-4DB0-9E35-80B7EBD603A7",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SampleXcodeCloudTest.xcodeproj",
+        "identifier" : "3AD909B629CFF5D8009AB517",
+        "name" : "macOSUnitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

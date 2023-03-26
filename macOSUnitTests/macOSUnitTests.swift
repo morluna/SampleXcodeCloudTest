@@ -8,7 +8,7 @@
 import XCTest
 
 final class macOSUnitTests: XCTestCase {
-    func testTwoPlusTwoEqualsFour() throws {
-        XCTAssertEqual(2 + 2, 4)
+    func testThreePlusThreeEqualsSix() throws {
+        XCTAssertEqual(3 + 3, 6)
     }
 }
